@@ -25,8 +25,8 @@ public class WarshipKafkaResource {
     private final Logger log = LoggerFactory.getLogger(WarshipKafkaResource.class);
 
     private final KafkaProperties kafkaProperties;
-    private KafkaProducer<String, String> producer;
-    private ExecutorService sseExecutorService = Executors.newCachedThreadPool();
+    private final KafkaProducer<String, String> producer;
+    private final ExecutorService sseExecutorService = Executors.newCachedThreadPool();
 
     public WarshipKafkaResource(KafkaProperties kafkaProperties) {
         this.kafkaProperties = kafkaProperties;

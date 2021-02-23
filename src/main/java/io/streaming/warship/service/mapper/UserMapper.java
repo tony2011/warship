@@ -3,13 +3,16 @@ package io.streaming.warship.service.mapper;
 import io.streaming.warship.domain.Authority;
 import io.streaming.warship.domain.User;
 import io.streaming.warship.service.dto.UserDTO;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 
 /**
  * Mapper for the entity {@link User} and its DTO called {@link UserDTO}.
- *
+ * <p>
  * Normal mappers are generated using MapStruct, this one is hand-coded as MapStruct
  * support is still in beta, and requires a manual step with an IDE.
  */

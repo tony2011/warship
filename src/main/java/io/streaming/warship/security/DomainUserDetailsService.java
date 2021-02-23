@@ -2,7 +2,8 @@ package io.streaming.warship.security;
 
 import io.streaming.warship.domain.User;
 import io.streaming.warship.repository.UserRepository;
-import java.util.*;
+import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 import org.hibernate.validator.internal.constraintvalidators.hv.EmailValidator;
 import org.slf4j.Logger;
